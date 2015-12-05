@@ -18,6 +18,18 @@
     "main"
    ]
   },
+	{
+   "name": "./systems/simulation/spawnBullet",
+   "scenes": [
+    "main"
+   ]
+  },
+	{
+   "name": "./systems/simulation/destroyIfOffScreen",
+	"scenes": [
+	 "main"
+	]
+ },
   {
    "name": "splatjs:applyVelocity",
    "scenes": [
@@ -49,15 +61,15 @@
    "scenes": [
     "main"
    ]
-  },
+ },
+ {
+	"name": "./systems/renderer/showBulletCount",
+ "scenes": [
+	"main"
+ ]
+},
   {
    "name": "splatjs:viewport.moveToCamera",
-   "scenes": [
-    "main"
-   ]
-  },
-  {
-   "name": "./systems/renderer/render-player",
    "scenes": [
     "main"
    ]
@@ -67,7 +79,7 @@
    "scenes": [
     "main"
    ]
-  },
+ },
   {
    "name": "splatjs:viewport.reset",
    "scenes": [
