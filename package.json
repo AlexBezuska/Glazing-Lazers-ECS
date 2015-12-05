@@ -1,7 +1,7 @@
 {
-  "name": "splat-ecs-starter-project",
+  "name": "Glazing-Lazers-ECS",
   "version": "0.0.0",
-  "description": "A Sample game",
+  "description": "Huge mutated donuts are about to invade your home planet! Use 7 different weapons to eradicate as many donuts as you can before they destroy you! Created for the #letscookjam",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SplatJS/splat-ecs-starter-project.git"
+    "url": "https://github.com/alexbezuska/Glazing-Lazers-ECS.git"
   },
   "keywords": [],
-  "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
+  "author": "Alex Bezuska <abezuska@gmail.com> (http://alexbezuska.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SplatJS/splat-ecs-starter-project/issues"
+    "url": "https://github.com/alexbezuska/Glazing-Lazers-ECS/issues"
   },
-  "homepage": "https://github.com/SplatJS/splat-ecs-starter-project",
+  "homepage": "https://github.com/alexbezuska/Glazing-Lazers-ECS",
   "devDependencies": {
     "browserify": "^7.0.0",
     "eslint": "^1.10.1",
