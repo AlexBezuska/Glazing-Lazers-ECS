@@ -1,4 +1,5 @@
 {
  "ship": "images/ship.png",
- "bullet": "images/bullet.png"
+ "bullet": "images/bullet.png",
+ "donut1": "images/donut1.png"
 }

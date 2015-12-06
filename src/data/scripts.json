@@ -1,5 +1,6 @@
 [
 	"./scripts/main-enter",
 	"./scripts/main-exit",
-	"./scripts/playerShoot"
+	"./scripts/playerShoot",
+	"./scripts/spawnDonut"
 ]

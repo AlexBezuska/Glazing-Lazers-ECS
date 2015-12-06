@@ -26,5 +26,19 @@
 		 }
 		}
 	 }
+],
+"donut1": [
+	{
+	 "time": 100,
+	 "properties": {
+		"image": {
+		 "name": "donut1",
+		 "sourceX": 0,
+		 "sourceY": 0,
+		 "sourceWidth": 75,
+		 "sourceHeight": 75
+		}
+	 }
+	}
 ]
 }

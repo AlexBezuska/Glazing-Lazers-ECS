@@ -20,6 +20,11 @@
 			"main"
 		]
 	}, {
+		"name": "./systems/simulation/destroyIfBelowScreen",
+		"scenes": [
+			"main"
+		]
+	}, {
 		"name": "splatjs:applyVelocity",
 		"scenes": [
 			"main"
