@@ -44,6 +44,16 @@
 		"scenes": [
 			"main"
 		]
+	}, {
+		"name": "./systems/simulation/bulletHitDonut",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "./systems/simulation/donutKilled",
+		"scenes": [
+			"main"
+		]
 	}],
 	"renderer": [{
 		"name": "splatjs:clearScreen",

@@ -4,6 +4,7 @@
    "id": 0,
    "name": "player",
    "player": true,
+	 "hp": 5,
 	 "playableArea": {"x": 0, "y": 0, "width": 960, "height": 1280},
    "position": {
     "x": 0,
@@ -17,6 +18,7 @@
     "x": 0,
     "y": 0
   },
+	"collisions":[],
    "animation": {
     "time": 0,
     "frame": 0,

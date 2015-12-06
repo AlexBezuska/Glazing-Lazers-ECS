@@ -9,8 +9,10 @@ module.exports = function(donutSpawner, data) { // eslint-disable-line no-unused
 
 	data.entities.entities[donut.id] = {
 		"id" : donut.id,
+		"enemy": true,
 		"destroyIfBelowScreen": true,
 		"name": "donut1",
+		"hp": 5,
 		"position": {
 			"x": randomRange(donutSpawner.position.x, (donutSpawner.position.x + donutSpawner.size.width)),
 			"y": donutSpawner.position.y
@@ -23,6 +25,7 @@ module.exports = function(donutSpawner, data) { // eslint-disable-line no-unused
 			"x": 0,
 			"y": 0.4
 		},
+		"collisions":[],
 		"animation": {
 			"time": 0,
 			"frame": 0,
