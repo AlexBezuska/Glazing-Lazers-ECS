@@ -6,8 +6,8 @@
    "player": true,
 	 "playableArea": {"x": 0, "y": 0, "width": 960, "height": 1280},
    "position": {
-    "x": 100,
-    "y": 100
+    "x": 0,
+    "y": 786
    },
    "size": {
     "width": 100,
