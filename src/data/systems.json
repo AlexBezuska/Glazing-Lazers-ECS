@@ -1,90 +1,79 @@
 {
- "simulation": [
-  {
-   "name": "splatjs:advanceTimers",
-   "scenes": [
-    "main"
-   ]
-  },
-  {
-   "name": "splatjs:advanceAnimations",
-   "scenes": [
-    "main"
-   ]
-  },
-  {
-   "name": "./systems/simulation/control-player",
-   "scenes": [
-    "main"
-   ]
-  },
-	{
-   "name": "./systems/simulation/spawnBullet",
-   "scenes": [
-    "main"
-   ]
-  },
-	{
-   "name": "./systems/simulation/destroyIfOffScreen",
-	"scenes": [
-	 "main"
-	]
- },
-  {
-   "name": "splatjs:applyVelocity",
-   "scenes": [
-    "main"
-   ]
-  },
-  {
-   "name": "splatjs:followParent",
-   "scenes": [
-    "main"
-   ]
-  },
-  {
-   "name": "splatjs:boxCollider",
-   "scenes": [
-    "main"
-   ]
-  }
- ],
- "renderer": [
-  {
-   "name": "splatjs:clearScreen",
-   "scenes": [
-    "main"
-   ]
-  },
-  {
-   "name": "./systems/renderer/drawBackground",
-   "scenes": [
-    "main"
-   ]
- },
- {
-	"name": "./systems/renderer/showBulletCount",
- "scenes": [
-	"main"
- ]
-},
-  {
-   "name": "splatjs:viewport.moveToCamera",
-   "scenes": [
-    "main"
-   ]
-  },
-  {
-   "name": "splatjs:drawImage",
-   "scenes": [
-    "main"
-   ]
- },
-  {
-   "name": "splatjs:viewport.reset",
-   "scenes": [
-    "main"
-   ]
-  }
- ]
+	"simulation": [{
+		"name": "splatjs:advanceTimers",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:advanceAnimations",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "./systems/simulation/control-player",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "./systems/simulation/spawnBullet",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "./systems/simulation/destroyIfOffScreen",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:applyVelocity",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:constrainToPlayableArea",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:followParent",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:boxCollider",
+		"scenes": [
+			"main"
+		]
+	}],
+	"renderer": [{
+		"name": "splatjs:clearScreen",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "./systems/renderer/drawBackground",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "./systems/renderer/showBulletCount",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:viewport.moveToCamera",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:drawImage",
+		"scenes": [
+			"main"
+		]
+	}, {
+		"name": "splatjs:viewport.reset",
+		"scenes": [
+			"main"
+		]
+	}]
 }
