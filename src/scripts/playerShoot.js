@@ -7,18 +7,20 @@ module.exports = function(player, data) { // eslint-disable-line no-unused-vars
 		"id" : bullet.id,
 		"destroyIfOffScreen": true,
 		"name": "bullet",
+		"bullet": true,
 		"position": {
 			"x": player.position.x + (player.size.width/2),
 			"y": player.position.y
 		},
 		"size": {
-			"width": 1,
-			"height": 2
+			"width": 6,
+			"height": 12
 		},
 		"velocity": {
 			"x": 0,
 			"y": -0.9
 		},
+		"collisions":[],
 		"animation": {
 			"time": 0,
 			"frame": 0,
@@ -34,8 +36,8 @@ module.exports = function(player, data) { // eslint-disable-line no-unused-vars
 			"sourceHeight": 0,
 			"destinationX": 0,
 			"destinationY": 0,
-			"destinationWidth": 1,
-			"destinationHeight": 2
+			"destinationWidth": 6,
+			"destinationHeight": 12
 		}
 	};
 	player.timers.shoot.running = true;

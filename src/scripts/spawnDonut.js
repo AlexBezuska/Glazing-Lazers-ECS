@@ -12,7 +12,7 @@ module.exports = function(donutSpawner, data) { // eslint-disable-line no-unused
 		"enemy": true,
 		"destroyIfBelowScreen": true,
 		"name": "donut1",
-		"hp": 5,
+		"hp": 100,
 		"position": {
 			"x": randomRange(donutSpawner.position.x, (donutSpawner.position.x + donutSpawner.size.width)),
 			"y": donutSpawner.position.y
