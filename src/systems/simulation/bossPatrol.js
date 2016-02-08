@@ -12,8 +12,12 @@ module.exports = function(ecs, game) {
 
 		if (bossPosition.x > (viewportSize.width - bossSize.width)) {
 			bossVelocity.x = -0.1;
-		} else if (bossPosition.x < viewportPosition.x) {
+		}
+		if (bossPosition.x < viewportPosition.x) {
 			bossVelocity.x = 0.1;
+		}
+		if (bossPosition.y > viewportPosition.y + 200) {
+			bossVelocity.y = 0.0;
 		}
 
 	}, "boss");
