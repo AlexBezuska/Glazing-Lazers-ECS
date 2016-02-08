@@ -1,49 +1,18 @@
 "use strict";
 
-function randomRange(min, max) {
-	return Math.floor(Math.random() * ((max + 1) - min)) + min;
-}
+var random = require("../random");
+var donuts = ["donut", "donut2", "donut3","donut4","donut5"];
+module.exports = function(entity, game) { // eslint-disable-line no-unused-vars
+	var donutSpawnerPosition = game.entities.get(entity, "position");
+	var donutSpawnerSize = game.entities.get(entity, "size");
+	var donut = game.instantiatePrefab(random.from(donuts));
 
-module.exports = function(donutSpawner, data) { // eslint-disable-line no-unused-vars
-	var donut = data.entities.add();
+	game.entities.set(donut, "position", {
+		"x": random.inRange(donutSpawnerPosition.x, (donutSpawnerPosition.x + donutSpawnerSize.width)),
+		"y": donutSpawnerPosition.y
+	});
 
-	data.entities.entities[donut.id] = {
-		"id" : donut.id,
-		"enemy": true,
-		"destroyIfBelowScreen": true,
-		"name": "donut1",
-		"hp": 100,
-		"position": {
-			"x": randomRange(donutSpawner.position.x, (donutSpawner.position.x + donutSpawner.size.width)),
-			"y": donutSpawner.position.y
-		},
-		"size": {
-			"width": 75,
-			"height": 75
-		},
-		"velocity": {
-			"x": 0,
-			"y": 0.4
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": false,
-			"speed": 1,
-			"name": "donut1"
-		},
-		"image": {
-			"name": "donut1",
-			"sourceX": 0,
-			"sourceY": 0,
-			"sourceWidth": 0,
-			"sourceHeight": 0,
-			"destinationX": 0,
-			"destinationY": 0,
-			"destinationWidth": 75,
-			"destinationHeight": 75
-		}
-	};
-	donutSpawner.timers.shoot.running = true;
+
+	var donutSpawnerTimers = game.entities.get(entity, "timers");
+	donutSpawnerTimers.donut.running = true;
 };

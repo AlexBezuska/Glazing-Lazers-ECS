@@ -1,1 +1,12 @@
-{}
+{
+	"hit": "./sounds/hit.wav",
+	"hit2": "./sounds/hit2.wav",
+	"hit3": "./sounds/hit3.wav",
+	"explosion": "./sounds/Explosion.wav",
+	"explosion2": "./sounds/Explosion2.wav",
+	"explosion3": "./sounds/Explosion3.wav",
+	"explosion4": "./sounds/Explosion4.wav",
+	"explosion5": "./sounds/Explosion5.wav",
+	"explosion6": "./sounds/Explosion6.wav",
+	"explosion-boss": "./sounds/Explosion-boss.wav"
+}

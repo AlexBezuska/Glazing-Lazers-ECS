@@ -1,17 +1,19 @@
 "use strict";
 
-function isOffScreen(canvas, entity){
-	return ( entity.position.x < 0
-		|| entity.position.y < 0
-		|| (entity.position.x + entity.size.width) > canvas.width
-		|| (entity.position.y + entity.size.height) > canvas.height );
+function isOffScreen(canvas, entity, game) {
+	var entityPosition = game.entities.get(entity, "position");
+	var entitySize = game.entities.get(entity, "size");
+	return (entityPosition.x < 0
+		|| entityPosition.y < 0
+		|| (entityPosition.x + entitySize.width) > canvas.width
+		|| (entityPosition.y + entitySize.height) > canvas.height);
 }
 
-module.exports = function(ecs, data) {
+module.exports = function(ecs, game) {
 	ecs.addEach(function(entity, elapsed) { // eslint-disable-line no-unused-vars
-		if(isOffScreen(data.canvas, entity)){
-			delete data.entities.entities[entity.id];
+		if (isOffScreen(game.canvas, entity, game)) {
+			game.entities.destroy(entity);
 		}
 
-	}, ["destroyIfOffScreen"]);
+	}, "destroyIfOffScreen");
 };

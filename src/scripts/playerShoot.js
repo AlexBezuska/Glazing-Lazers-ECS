@@ -1,44 +1,16 @@
 "use strict";
 
-module.exports = function(player, data) { // eslint-disable-line no-unused-vars
-	var bullet = data.entities.add();
+module.exports = function(entity, game) { // eslint-disable-line no-unused-vars
 
-	data.entities.entities[bullet.id] = {
-		"id" : bullet.id,
-		"destroyIfOffScreen": true,
-		"name": "bullet",
-		"bullet": true,
-		"position": {
-			"x": player.position.x + (player.size.width/2),
-			"y": player.position.y
-		},
-		"size": {
-			"width": 6,
-			"height": 12
-		},
-		"velocity": {
-			"x": 0,
-			"y": -0.9
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": false,
-			"speed": 1,
-			"name": "bullet"
-		},
-		"image": {
-			"name": "bullet",
-			"sourceX": 0,
-			"sourceY": 0,
-			"sourceWidth": 0,
-			"sourceHeight": 0,
-			"destinationX": 0,
-			"destinationY": 0,
-			"destinationWidth": 6,
-			"destinationHeight": 12
-		}
-	};
-	player.timers.shoot.running = true;
+	var playerPosition = game.entities.get(entity, "position");
+	var playerSize = game.entities.get(entity, "size");
+	var bullet = game.instantiatePrefab("bullet");
+
+	game.entities.set(bullet, "position", {
+		"x": playerPosition.x + (playerSize.width / 2),
+		"y": playerPosition.y
+	});
+
+	var playerTimers = game.entities.get(entity, "timers");
+	playerTimers.shoot.running = true;
 };

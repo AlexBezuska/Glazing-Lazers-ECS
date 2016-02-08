@@ -1,0 +1,292 @@
+{
+	"bullet":{
+		"destroyIfOffScreen": true,
+		"name": "bullet",
+		"bullet": true,
+		"power": 20,
+		"position": {
+			"x": 0,
+			"y": 0
+		},
+		"zindex":{
+			"zindex": 2
+		},
+		"size": {
+			"width": 8,
+			"height": 27
+		},
+		"velocity": {
+			"x": 0,
+			"y": -0.9
+		},
+		"collisions": [],
+		"image":{
+			"name": "bullet"
+		},
+		"passThrough": false
+	},
+	"donut":{
+	 	"enemy": true,
+	 	"destroyIfBelowScreen": true,
+	 	"name": "donut1",
+		"donut": true,
+		"health": 20,
+		"destroyIfHealthRunsOut": true,
+	 	"position": {
+	 		"x": 0,
+	 		"y": 0
+	 	},
+		"zindex":{
+			"zindex": 2
+		},
+	 	"size": {
+	 		"width": 75,
+	 		"height": 75
+	 	},
+	 	"velocity": {
+	 		"x": 0,
+	 		"y": 0.4
+	 	},
+	 	"collisions":[],
+	 	"image": {
+	 		"name": "donut1"
+	 	},
+		"death-sounds":
+		[
+			"explosion",
+			"explosion2",
+			"explosion3",
+			"explosion4",
+			"explosion5",
+			"explosion6"
+		],
+		"hit-sounds":
+		[
+			"hit",
+			"hit2",
+			"hit3"
+		],
+		"rotation":{
+			"angle": 0
+		}
+	},
+	"donut2":{
+	 	"enemy": true,
+	 	"destroyIfBelowScreen": true,
+	 	"name": "donut2",
+		"donut": true,
+		"health": 20,
+		"destroyIfHealthRunsOut": true,
+	 	"position": {
+	 		"x": 0,
+	 		"y": 0
+	 	},
+		"zindex":{
+			"zindex": 2
+		},
+	 	"size": {
+	 		"width": 75,
+	 		"height": 75
+	 	},
+	 	"velocity": {
+	 		"x": 0,
+	 		"y": 0.4
+	 	},
+	 	"collisions":[],
+	 	"image": {
+	 		"name": "donut2"
+	 	},
+		"death-sounds":
+		[
+			"explosion",
+			"explosion2",
+			"explosion3",
+			"explosion4",
+			"explosion5",
+			"explosion6"
+		],
+		"hit-sounds":
+		[
+			"hit",
+			"hit2",
+			"hit3"
+		],
+		"rotation":{
+			"angle": 0
+		}
+	},
+	"donut3":{
+	 	"enemy": true,
+	 	"destroyIfBelowScreen": true,
+	 	"name": "donut3",
+		"donut": true,
+		"health": 20,
+		"destroyIfHealthRunsOut": true,
+	 	"position": {
+	 		"x": 0,
+	 		"y": 0
+	 	},
+		"zindex":{
+			"zindex": 2
+		},
+	 	"size": {
+	 		"width": 75,
+	 		"height": 75
+	 	},
+	 	"velocity": {
+	 		"x": 0,
+	 		"y": 0.4
+	 	},
+	 	"collisions":[],
+	 	"image": {
+	 		"name": "donut3"
+	 	},
+		"death-sounds":
+		[
+			"explosion",
+			"explosion2",
+			"explosion3",
+			"explosion4",
+			"explosion5",
+			"explosion6"
+		],
+		"hit-sounds":
+		[
+			"hit",
+			"hit2",
+			"hit3"
+		],
+		"rotation":{
+			"angle": 0
+		}
+	},
+	"donut4":{
+	 	"enemy": true,
+	 	"destroyIfBelowScreen": true,
+	 	"name": "donut4",
+		"donut": true,
+		"health": 20,
+		"destroyIfHealthRunsOut": true,
+	 	"position": {
+	 		"x": 0,
+	 		"y": 0
+	 	},
+		"zindex":{
+			"zindex": 2
+		},
+	 	"size": {
+	 		"width": 75,
+	 		"height": 75
+	 	},
+	 	"velocity": {
+	 		"x": 0,
+	 		"y": 0.4
+	 	},
+	 	"collisions":[],
+	 	"image": {
+	 		"name": "donut4"
+	 	},
+		"death-sounds":
+		[
+			"explosion",
+			"explosion2",
+			"explosion3",
+			"explosion4",
+			"explosion5",
+			"explosion6"
+		],
+		"hit-sounds":
+		[
+			"hit",
+			"hit2",
+			"hit3"
+		],
+		"rotation":{
+			"angle": 0
+		}
+	},
+	"donut5":{
+	 	"enemy": true,
+	 	"destroyIfBelowScreen": true,
+	 	"name": "donut5",
+		"donut": true,
+		"health": 20,
+		"destroyIfHealthRunsOut": true,
+	 	"position": {
+	 		"x": 0,
+	 		"y": 0
+	 	},
+		"zindex":{
+			"zindex": 2
+		},
+	 	"size": {
+	 		"width": 75,
+	 		"height": 75
+	 	},
+	 	"velocity": {
+	 		"x": 0,
+	 		"y": 0.4
+	 	},
+	 	"collisions":[],
+	 	"image": {
+	 		"name": "donut5"
+	 	},
+		"death-sounds":
+		[
+			"explosion",
+			"explosion2",
+			"explosion3",
+			"explosion4",
+			"explosion5",
+			"explosion6"
+		],
+		"hit-sounds":
+		[
+			"hit",
+			"hit2",
+			"hit3"
+		],
+		"rotation":{
+			"angle": 0
+		}
+	 }
+	 ,"boss":{
+	 	"enemy": true,
+	 	"name": "boss",
+		"boss":true,
+	 	"health": 450,
+	 	"destroyIfHealthRunsOut": true,
+	 	"position": {
+	 		"x": 0,
+	 		"y": 0
+	 	},
+		"zindex":{
+			"zindex": 2
+		},
+	 	"size": {
+	 		"width": 430,
+	 		"height": 313
+	 	},
+	 	"velocity": {
+	 		"x": 0.4,
+	 		"y": 0.1
+	 	},
+	 	"collisions":[],
+	 	"image": {
+	 		"name": "boss"
+	 	},
+	 	"death-sounds":
+	 	[
+	 		"explosion-boss"
+	 	],
+	 	"hit-sounds":
+	 	[
+	 		"hit",
+	 		"hit2",
+	 		"hit3"
+	 	],
+	 	"rotation":{
+	 		"angle": 0
+	 	}
+	}
+ }

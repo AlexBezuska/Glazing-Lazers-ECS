@@ -1,89 +1,177 @@
 {
-	"simulation": [{
-		"name": "splatjs:advanceTimers",
+	"simulation": [
+		{
+			"name": "./systems/simulation/bossPatrol",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/destroyIfOffScreen",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/destroyIfBelowScreen",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/destroyIfHealthRunsOut",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+		"name": "splat-ecs/lib/systems/match-center",
 		"scenes": [
-			"main"
+		"main"
 		]
-	}, {
-		"name": "splatjs:advanceAnimations",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "./systems/simulation/control-player",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "./systems/simulation/destroyIfOffScreen",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "./systems/simulation/destroyIfBelowScreen",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "splatjs:applyVelocity",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "splatjs:constrainToPlayableArea",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "splatjs:followParent",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "splatjs:boxCollider",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "./systems/simulation/bulletHitDonut",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "./systems/simulation/donutKilled",
-		"scenes": [
-			"main"
-		]
-	}],
-	"renderer": [{
-		"name": "splatjs:clearScreen",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "./systems/renderer/drawBackground",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "./systems/renderer/showBulletCount",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "splatjs:viewport.moveToCamera",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "splatjs:drawImage",
-		"scenes": [
-			"main"
-		]
-	}, {
-		"name": "splatjs:viewport.reset",
-		"scenes": [
-			"main"
-		]
-	}]
+		},
+		{
+			"name": "splat-ecs/lib/systems/match-canvas-size",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/advance-timers",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/advance-animations",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/control-player",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/apply-movement-2d",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/bulletHitEnemy",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/apply-velocity",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/apply-friction",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/follow-parent",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/box-collider",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/constrain-to-playable-area",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/sample-simulation-system",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/enemyTouchPlayer",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/screen-shake",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/rotate-donuts",
+			"scenes": [
+				"main"
+			]
+		},
+
+		{
+			"name": "./systems/simulation/move-clouds",
+			"scenes": [
+				"main"
+			]
+		}
+
+
+	],
+	"renderer": [
+		{
+			"name": "splat-ecs/lib/systems/clear-screen",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/viewport-move-to-camera",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/renderer/sample-renderer-system",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/draw-image",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/renderer/crop-game",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/viewport-reset",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/draw-frame-rate",
+			"scenes": [
+				"main"
+			]
+		}
+	]
 }

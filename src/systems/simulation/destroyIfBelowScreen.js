@@ -1,14 +1,15 @@
 "use strict";
 
-function isBelowScreen(canvas, entity){
-	return entity.position.y > canvas.height;
+function isBelowScreen(canvas, entity, game) {
+	var entityPosition = game.entities.get(entity, "position");
+	return (entityPosition.y > canvas.height);
 }
 
-module.exports = function(ecs, data) {
+module.exports = function(ecs, game) {
 	ecs.addEach(function(entity, elapsed) { // eslint-disable-line no-unused-vars
-		if(isBelowScreen(data.canvas, entity)){
-			delete data.entities.entities[entity.id];
+		if (isBelowScreen(game.canvas, entity, game)) {
+			game.entities.destroy(entity);
 		}
 
-	}, ["destroyIfBelowScreen"]);
+	}, "destroyIfBelowScreen");
 };
