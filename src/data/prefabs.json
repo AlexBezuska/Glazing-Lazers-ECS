@@ -20,37 +20,45 @@
 			"y": -0.9
 		},
 		"collisions": [],
-		"image":{
+		"animation": {
+			"time": 0,
+			"frame": 0,
+			"loop": true,
+			"speed": 1,
 			"name": "bullet"
 		},
 		"passThrough": false
 	},
 	"donut":{
-	 	"enemy": true,
-	 	"destroyIfBelowScreen": true,
-	 	"name": "donut1",
+		"enemy": true,
+		"destroyIfBelowScreen": true,
+		"name": "donut1",
 		"donut": true,
 		"health": 20,
 		"destroyIfHealthRunsOut": true,
-	 	"position": {
-	 		"x": 0,
-	 		"y": 0
-	 	},
+		"position": {
+			"x": 0,
+			"y": 0
+		},
 		"zindex":{
 			"zindex": 2
 		},
-	 	"size": {
-	 		"width": 75,
-	 		"height": 75
-	 	},
-	 	"velocity": {
-	 		"x": 0,
-	 		"y": 0.4
-	 	},
-	 	"collisions":[],
-	 	"image": {
-	 		"name": "donut1"
-	 	},
+		"size": {
+			"width": 75,
+			"height": 75
+		},
+		"velocity": {
+			"x": 0,
+			"y": 0.4
+		},
+		"collisions":[],
+		"animation": {
+			"time": 0,
+			"frame": 0,
+			"loop": true,
+			"speed": 1,
+			"name": "donut1"
+		},
 		"death-sounds":
 		[
 			"explosion",
@@ -68,34 +76,46 @@
 		],
 		"rotation":{
 			"angle": 0
+		},
+		"timers":{
+			"explosion":{
+				"running": false,
+				"time": 0,
+				"max": 950,
+				"script": "./scripts/destroyMe"
+			}
 		}
 	},
 	"donut2":{
-	 	"enemy": true,
-	 	"destroyIfBelowScreen": true,
-	 	"name": "donut2",
+		"enemy": true,
+		"destroyIfBelowScreen": true,
+		"name": "donut2",
 		"donut": true,
 		"health": 20,
 		"destroyIfHealthRunsOut": true,
-	 	"position": {
-	 		"x": 0,
-	 		"y": 0
-	 	},
+		"position": {
+			"x": 0,
+			"y": 0
+		},
 		"zindex":{
 			"zindex": 2
 		},
-	 	"size": {
-	 		"width": 75,
-	 		"height": 75
-	 	},
-	 	"velocity": {
-	 		"x": 0,
-	 		"y": 0.4
-	 	},
-	 	"collisions":[],
-	 	"image": {
-	 		"name": "donut2"
-	 	},
+		"size": {
+			"width": 75,
+			"height": 75
+		},
+		"velocity": {
+			"x": 0,
+			"y": 0.4
+		},
+		"collisions":[],
+		"animation": {
+			"time": 0,
+			"frame": 0,
+			"loop": true,
+			"speed": 1,
+			"name": "donut2"
+		},
 		"death-sounds":
 		[
 			"explosion",
@@ -113,34 +133,46 @@
 		],
 		"rotation":{
 			"angle": 0
+		},
+		"timers":{
+			"explosion":{
+				"running": false,
+				"time": 0,
+				"max": 950,
+				"script": "./scripts/destroyMe"
+			}
 		}
 	},
 	"donut3":{
-	 	"enemy": true,
-	 	"destroyIfBelowScreen": true,
-	 	"name": "donut3",
+		"enemy": true,
+		"destroyIfBelowScreen": true,
+		"name": "donut3",
 		"donut": true,
 		"health": 20,
 		"destroyIfHealthRunsOut": true,
-	 	"position": {
-	 		"x": 0,
-	 		"y": 0
-	 	},
+		"position": {
+			"x": 0,
+			"y": 0
+		},
 		"zindex":{
 			"zindex": 2
 		},
-	 	"size": {
-	 		"width": 75,
-	 		"height": 75
-	 	},
-	 	"velocity": {
-	 		"x": 0,
-	 		"y": 0.4
-	 	},
-	 	"collisions":[],
-	 	"image": {
-	 		"name": "donut3"
-	 	},
+		"size": {
+			"width": 75,
+			"height": 75
+		},
+		"velocity": {
+			"x": 0,
+			"y": 0.4
+		},
+		"collisions":[],
+		"animation": {
+			"time": 0,
+			"frame": 0,
+			"loop": true,
+			"speed": 1,
+			"name": "donut2"
+		},
 		"death-sounds":
 		[
 			"explosion",
@@ -158,34 +190,46 @@
 		],
 		"rotation":{
 			"angle": 0
+		},
+		"timers":{
+			"explosion":{
+				"running": false,
+				"time": 0,
+				"max": 950,
+				"script": "./scripts/destroyMe"
+			}
 		}
 	},
 	"donut4":{
-	 	"enemy": true,
-	 	"destroyIfBelowScreen": true,
-	 	"name": "donut4",
+		"enemy": true,
+		"destroyIfBelowScreen": true,
+		"name": "donut4",
 		"donut": true,
 		"health": 20,
 		"destroyIfHealthRunsOut": true,
-	 	"position": {
-	 		"x": 0,
-	 		"y": 0
-	 	},
+		"position": {
+			"x": 0,
+			"y": 0
+		},
 		"zindex":{
 			"zindex": 2
 		},
-	 	"size": {
-	 		"width": 75,
-	 		"height": 75
-	 	},
-	 	"velocity": {
-	 		"x": 0,
-	 		"y": 0.4
-	 	},
-	 	"collisions":[],
-	 	"image": {
-	 		"name": "donut4"
-	 	},
+		"size": {
+			"width": 75,
+			"height": 75
+		},
+		"velocity": {
+			"x": 0,
+			"y": 0.4
+		},
+		"collisions":[],
+		"animation": {
+			"time": 0,
+			"frame": 0,
+			"loop": true,
+			"speed": 1,
+			"name": "donut4"
+		},
 		"death-sounds":
 		[
 			"explosion",
@@ -203,34 +247,46 @@
 		],
 		"rotation":{
 			"angle": 0
+		},
+		"timers":{
+			"explosion":{
+				"running": false,
+				"time": 0,
+				"max": 950,
+				"script": "./scripts/destroyMe"
+			}
 		}
 	},
 	"donut5":{
-	 	"enemy": true,
-	 	"destroyIfBelowScreen": true,
-	 	"name": "donut5",
+		"enemy": true,
+		"destroyIfBelowScreen": true,
+		"name": "donut5",
 		"donut": true,
 		"health": 20,
 		"destroyIfHealthRunsOut": true,
-	 	"position": {
-	 		"x": 0,
-	 		"y": 0
-	 	},
+		"position": {
+			"x": 0,
+			"y": 0
+		},
 		"zindex":{
 			"zindex": 2
 		},
-	 	"size": {
-	 		"width": 75,
-	 		"height": 75
-	 	},
-	 	"velocity": {
-	 		"x": 0,
-	 		"y": 0.4
-	 	},
-	 	"collisions":[],
-	 	"image": {
-	 		"name": "donut5"
-	 	},
+		"size": {
+			"width": 75,
+			"height": 75
+		},
+		"velocity": {
+			"x": 0,
+			"y": 0.4
+		},
+		"collisions":[],
+		"animation": {
+			"time": 0,
+			"frame": 0,
+			"loop": true,
+			"speed": 1,
+			"name": "donut5"
+		},
 		"death-sounds":
 		[
 			"explosion",
@@ -248,45 +304,65 @@
 		],
 		"rotation":{
 			"angle": 0
+		},
+		"timers":{
+			"explosion":{
+				"running": false,
+				"time": 0,
+				"max": 950,
+				"script": "./scripts/destroyMe"
+			}
 		}
-	 }
-	 ,"boss":{
-	 	"enemy": true,
-	 	"name": "boss",
+	}
+	,"boss":{
+		"enemy": true,
+		"name": "boss",
 		"boss":true,
-	 	"health": 450,
-	 	"destroyIfHealthRunsOut": true,
-	 	"position": {
-	 		"x": 0,
-	 		"y": 0
-	 	},
+		"health": 450,
+		"destroyIfHealthRunsOut": true,
+		"position": {
+			"x": 0,
+			"y": 0
+		},
 		"zindex":{
 			"zindex": 2
 		},
-	 	"size": {
-	 		"width": 430,
-	 		"height": 313
-	 	},
-	 	"velocity": {
-	 		"x": 0.4,
-	 		"y": 0.1
-	 	},
-	 	"collisions":[],
-	 	"image": {
-	 		"name": "boss"
-	 	},
-	 	"death-sounds":
-	 	[
-	 		"explosion-boss"
-	 	],
-	 	"hit-sounds":
-	 	[
-	 		"hit",
-	 		"hit2",
-	 		"hit3"
-	 	],
-	 	"rotation":{
-	 		"angle": 0
-	 	}
+		"size": {
+			"width": 430,
+			"height": 313
+		},
+		"velocity": {
+			"x": 0.4,
+			"y": 0.1
+		},
+		"collisions":[],
+		"animation": {
+			"time": 0,
+			"frame": 0,
+			"loop": true,
+			"speed": 1,
+			"name": "boss"
+		},
+		"death-sounds":
+		[
+			"explosion-boss"
+		],
+		"hit-sounds":
+		[
+			"hit",
+			"hit2",
+			"hit3"
+		],
+		"rotation":{
+			"angle": 0
+		},
+		"timers":{
+			"explosion":{
+				"running": false,
+				"time": 0,
+				"max": 950,
+				"script": "./scripts/destroyMe"
+			}
+		}
 	}
- }
+}

@@ -10,11 +10,11 @@ module.exports = function(ecs, game) {
 		var viewportPosition = game.entities.get(12, "position");
 		var viewportSize = game.entities.get(12, "size");
 
-		 if (bossPosition.x > (viewportSize.width - bossSize.width)) {
-			 bossVelocity.x = -0.1;
-		 } else if (bossPosition.x < viewportPosition.x) {
-			 bossVelocity.x = 0.1;
-		 }
+		if (bossPosition.x > (viewportSize.width - bossSize.width)) {
+			bossVelocity.x = -0.1;
+		} else if (bossPosition.x < viewportPosition.x) {
+			bossVelocity.x = 0.1;
+		}
 
 	}, "boss");
 };

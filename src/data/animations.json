@@ -1,44 +1,119 @@
 {
-  "ship": [
-    {
-     "time": 100,
-     "properties": {
-      "image": {
-       "name": "ship",
-       "sourceX": 0,
-       "sourceY": 0,
-       "sourceWidth": 87,
-       "sourceHeight": 81
-      }
-     }
-    }
- ],
- "bullet": [
-	 {
+	"ship": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "ship",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 87,
+				"sourceHeight": 81
+			}
+		}
+	}],
+	"bullet": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "bullet",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 1,
+				"sourceHeight": 2
+			}
+		}
+	}],
+	"donut1": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "donut1",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 75,
+				"sourceHeight": 75
+			}
+		}
+	}],
+	"donut2": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "donut2",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 75,
+				"sourceHeight": 75
+			}
+		}
+	}],
+	"donut3": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "donut3",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 75,
+				"sourceHeight": 75
+			}
+		}
+	}],
+	"donut4": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "donut4",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 75,
+				"sourceHeight": 75
+			}
+		}
+	}],
+	"donut5": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "donut5",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 75,
+				"sourceHeight": 75
+			}
+		}
+	}],
+	"boss": [{
+		"filmstripFrames": 1,
+		"time": 1,
+		"properties": {
+			"image": {
+				"name": "boss",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 430,
+				"sourceHeight": 313
+			}
+		}
+	}],
+	"explosion": [{
+		"filmstripFrames": 10,
 		"time": 100,
 		"properties": {
-		 "image": {
-			"name": "bullet",
-			"sourceX": 0,
-			"sourceY": 0,
-			"sourceWidth": 1,
-			"sourceHeight": 2
-		 }
+			"image": {
+				"name": "explosion",
+				"sourceX": 0,
+				"sourceY": 0,
+				"sourceWidth": 1130,
+				"sourceHeight": 113
+			}
 		}
-	 }
-],
-"donut1": [
-	{
-	 "time": 100,
-	 "properties": {
-		"image": {
-		 "name": "donut1",
-		 "sourceX": 0,
-		 "sourceY": 0,
-		 "sourceWidth": 75,
-		 "sourceHeight": 75
-		}
-	 }
-	}
-]
+	}]
 }

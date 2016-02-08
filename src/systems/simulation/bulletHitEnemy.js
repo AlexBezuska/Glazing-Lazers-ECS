@@ -13,7 +13,7 @@ module.exports = function(ecs, game) {
 		if (bulletCollisions) {
 			for (var i = 0; i < bulletCollisions.length; i++) {
 				var other = bulletCollisions[i];
-				if (game.entities.get(other, "enemy")) {
+				if (game.entities.get(other, "enemy") && !game.entities.get(other, "timers").explosion.running) {
 					var enemyHealth = game.entities.get(other, "health");
 					var hitSounds = game.entities.get(other, "hit-sounds");
 					game.sounds.play(random.from(hitSounds));
