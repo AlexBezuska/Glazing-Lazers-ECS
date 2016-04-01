@@ -1,368 +1,329 @@
 {
-	"bullet":{
+  "bullet":{
 		"destroyIfOffScreen": true,
 		"name": "bullet",
 		"bullet": true,
 		"power": 20,
-		"position": {
-			"x": 0,
-			"y": 0
-		},
-		"zindex":{
-			"zindex": 2
-		},
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 5
+    },
 		"size": {
-			"width": 8,
-			"height": 27
+			"width": 42,
+			"height": 62
 		},
 		"velocity": {
 			"x": 0,
-			"y": -0.9
+			"y": -2
 		},
+    "rotation":{
+      "angle": 0
+    },
 		"collisions": [],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": true,
-			"speed": 1,
-			"name": "bullet"
+		"image": {
+			"name": "bullet-1.png"
 		},
 		"passThrough": false
 	},
-	"donut":{
-		"enemy": true,
-		"destroyIfBelowScreen": true,
-		"name": "donut1",
-		"donut": true,
-		"health": 20,
-		"destroyIfHealthRunsOut": true,
-		"position": {
-			"x": 0,
-			"y": 0
-		},
-		"zindex":{
-			"zindex": 2
-		},
-		"size": {
-			"width": 75,
-			"height": 75
-		},
-		"velocity": {
-			"x": 0,
-			"y": 0.4
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": true,
-			"speed": 1,
-			"name": "donut1"
-		},
-		"death-sounds":
-		[
-			"explosion",
-			"explosion2",
-			"explosion3",
-			"explosion4",
-			"explosion5",
-			"explosion6"
-		],
-		"hit-sounds":
-		[
-			"hit",
-			"hit2",
-			"hit3"
-		],
-		"rotation":{
-			"angle": 0
-		},
-		"timers":{
-			"explosion":{
-				"running": false,
-				"time": 0,
-				"max": 950,
-				"script": "./scripts/destroyMe"
-			}
-		}
-	},
-	"donut2":{
-		"enemy": true,
-		"destroyIfBelowScreen": true,
-		"name": "donut2",
-		"donut": true,
-		"health": 20,
-		"destroyIfHealthRunsOut": true,
-		"position": {
-			"x": 0,
-			"y": 0
-		},
-		"zindex":{
-			"zindex": 2
-		},
-		"size": {
-			"width": 75,
-			"height": 75
-		},
-		"velocity": {
-			"x": 0,
-			"y": 0.4
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": true,
-			"speed": 1,
-			"name": "donut2"
-		},
-		"death-sounds":
-		[
-			"explosion",
-			"explosion2",
-			"explosion3",
-			"explosion4",
-			"explosion5",
-			"explosion6"
-		],
-		"hit-sounds":
-		[
-			"hit",
-			"hit2",
-			"hit3"
-		],
-		"rotation":{
-			"angle": 0
-		},
-		"timers":{
-			"explosion":{
-				"running": false,
-				"time": 0,
-				"max": 950,
-				"script": "./scripts/destroyMe"
-			}
-		}
-	},
-	"donut3":{
-		"enemy": true,
-		"destroyIfBelowScreen": true,
-		"name": "donut3",
-		"donut": true,
-		"health": 20,
-		"destroyIfHealthRunsOut": true,
-		"position": {
-			"x": 0,
-			"y": 0
-		},
-		"zindex":{
-			"zindex": 2
-		},
-		"size": {
-			"width": 75,
-			"height": 75
-		},
-		"velocity": {
-			"x": 0,
-			"y": 0.4
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": true,
-			"speed": 1,
-			"name": "donut2"
-		},
-		"death-sounds":
-		[
-			"explosion",
-			"explosion2",
-			"explosion3",
-			"explosion4",
-			"explosion5",
-			"explosion6"
-		],
-		"hit-sounds":
-		[
-			"hit",
-			"hit2",
-			"hit3"
-		],
-		"rotation":{
-			"angle": 0
-		},
-		"timers":{
-			"explosion":{
-				"running": false,
-				"time": 0,
-				"max": 950,
-				"script": "./scripts/destroyMe"
-			}
-		}
-	},
-	"donut4":{
-		"enemy": true,
-		"destroyIfBelowScreen": true,
-		"name": "donut4",
-		"donut": true,
-		"health": 20,
-		"destroyIfHealthRunsOut": true,
-		"position": {
-			"x": 0,
-			"y": 0
-		},
-		"zindex":{
-			"zindex": 2
-		},
-		"size": {
-			"width": 75,
-			"height": 75
-		},
-		"velocity": {
-			"x": 0,
-			"y": 0.4
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": true,
-			"speed": 1,
-			"name": "donut4"
-		},
-		"death-sounds":
-		[
-			"explosion",
-			"explosion2",
-			"explosion3",
-			"explosion4",
-			"explosion5",
-			"explosion6"
-		],
-		"hit-sounds":
-		[
-			"hit",
-			"hit2",
-			"hit3"
-		],
-		"rotation":{
-			"angle": 0
-		},
-		"timers":{
-			"explosion":{
-				"running": false,
-				"time": 0,
-				"max": 950,
-				"script": "./scripts/destroyMe"
-			}
-		}
-	},
-	"donut5":{
-		"enemy": true,
-		"destroyIfBelowScreen": true,
-		"name": "donut5",
-		"donut": true,
-		"health": 20,
-		"destroyIfHealthRunsOut": true,
-		"position": {
-			"x": 0,
-			"y": 0
-		},
-		"zindex":{
-			"zindex": 2
-		},
-		"size": {
-			"width": 75,
-			"height": 75
-		},
-		"velocity": {
-			"x": 0,
-			"y": 0.4
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": true,
-			"speed": 1,
-			"name": "donut5"
-		},
-		"death-sounds":
-		[
-			"explosion",
-			"explosion2",
-			"explosion3",
-			"explosion4",
-			"explosion5",
-			"explosion6"
-		],
-		"hit-sounds":
-		[
-			"hit",
-			"hit2",
-			"hit3"
-		],
-		"rotation":{
-			"angle": 0
-		},
-		"timers":{
-			"explosion":{
-				"running": false,
-				"time": 0,
-				"max": 950,
-				"script": "./scripts/destroyMe"
-			}
-		}
-	}
-	,"boss":{
-		"enemy": true,
-		"name": "boss",
-		"boss":true,
-		"health": 450,
-		"destroyIfHealthRunsOut": true,
-		"position": {
-			"x": 0,
-			"y": 0
-		},
-		"zindex":{
-			"zindex": 2
-		},
-		"size": {
-			"width": 430,
-			"height": 313
-		},
-		"velocity": {
-			"x": 0.4,
-			"y": 0.1
-		},
-		"collisions":[],
-		"animation": {
-			"time": 0,
-			"frame": 0,
-			"loop": true,
-			"speed": 1,
-			"name": "boss"
-		},
-		"death-sounds":
-		[
-			"explosion-boss"
-		],
-		"hit-sounds":
-		[
-			"hit",
-			"hit2",
-			"hit3"
-		],
-		"rotation":{
-			"angle": 0
-		},
-		"timers":{
-			"explosion":{
-				"running": false,
-				"time": 0,
-				"max": 950,
-				"script": "./scripts/destroyMe"
-			}
-		}
-	}
+  "thrust":{
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 5
+    },
+    "size": {
+      "width": 35,
+      "height": 35
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0
+    },
+    "animation": {
+        "name": "thrust",
+        "time": 0,
+        "frame": 0,
+        "loop": true,
+        "speed": 1
+      }
+  },
+
+  "retro":{
+    "applyAcceleration": {
+      "x": 0,
+      "y": -0.02
+      },
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 3
+    },
+    "size": {
+      "width": 15,
+      "height": 15
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation":{
+      "angle": 0
+    },
+    "animation": {
+        "name": "thrust",
+        "time": 0,
+        "frame": 0,
+        "loop": true,
+        "speed": 1
+      },
+    "decay-fade": true,
+    "decay":{
+      "running": true,
+      "time": 0,
+      "max": 200
+    }
+  },
+  "fire":{
+    "applyAcceleration": {
+      "x": 0,
+      "y": 0
+      },
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 3
+    },
+    "size": {
+      "width": 12,
+      "height": 12
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation":{
+      "angle": 0
+    },
+    "image":{
+      "name": "fire-1.png"
+    },
+    "decay-fade": true,
+    "decay":{
+      "running": true,
+      "time": 0,
+      "max": 500
+    }
+  },
+  "fireworks":{
+    "applyAcceleration": {
+      "x": 0,
+      "y": 0
+      },
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 3
+    },
+    "size": {
+      "width": 12,
+      "height": 12
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation":{
+      "angle": 0
+    },
+    "image":{
+      "name": "fire-1.png"
+    },
+    "decay-fade": true,
+    "decay":{
+      "running": true,
+      "time": 0,
+      "max": 200
+    }
+  },
+  "bubble":{
+    "applyAcceleration": {
+      "x": 0,
+      "y": 0
+      },
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 3
+    },
+    "size": {
+      "width": 24,
+      "height": 24
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation":{
+      "angle": 0
+    },
+    "image":{
+      "name": "bubble.png"
+    },
+    "decay-fade": true,
+    "decay":{
+      "running": true,
+      "time": 0,
+      "max": 2200
+    }
+  },
+  "smoke":{
+    "applyAcceleration": {
+      "x": 0,
+      "y": 0
+      },
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 3
+    },
+    "size": {
+      "width": 45,
+      "height": 45
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation":{
+      "angle": 0
+    },
+    "image":{
+      "name": "smoke.png"
+    },
+    "decay-fade": true,
+    "decay":{
+      "running": true,
+      "time": 0,
+      "max": 1000
+    }
+  },
+  "spark":{
+    "applyAcceleration": {
+      "x": 0,
+      "y": 0
+      },
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 3
+    },
+    "size": {
+      "width": 18,
+      "height": 18
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation":{
+      "angle": 0
+    },
+    "image":{
+      "name": "spark.png"
+    },
+
+    "decay":{
+      "running": true,
+      "time": 0,
+      "max": 350
+    }
+  },
+  "donut":{
+  "enemy": true,
+  "destroyIfBelowScreen": true,
+  "donut": true,
+  "health": 20,
+  "power": 1,
+  "destroyIfHealthRunsOut": true,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 5
+  },
+  "size": {
+    "width": 150,
+    "height": 150
+  },
+  "velocity": {
+    "x": 0,
+    "y": 0.09
+  },
+  "collisions":[],
+  "animation": {
+    "time": 0,
+    "frame": 0,
+    "loop": true,
+    "speed": 1,
+    "name": "donut1"
+  },
+  "animations":[
+    "donut1",
+    "donut2",
+    "donut3",
+    "donut4",
+    "donut5"
+  ],
+  "death-sounds":
+  [
+    "donut-explode-1.wav",
+    "donut-explode-2.wav",
+    "donut-explode-3.wav",
+    "donut-explode-4.wav",
+    "donut-explode-5.wav",
+    "donut-explode-6.wav"
+  ],
+  "hit-sounds":
+  [
+    "donut-hit-1.wav",
+    "donut-hit-2.wav",
+    "donut-hit-3.wav"
+  ],
+  "rotation":{
+    "angle": 0,
+    "speed": 1000
+  },
+  "timers":{
+    "explosion":{
+      "running": false,
+      "time": 0,
+      "max": 600,
+      "script": "./scripts/destroyMe"
+    }
+  }
+},
+"rain":{
+  "destroyOfBelowScreen": true,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 5
+  },
+  "size": {
+    "width": 10,
+    "height": 10
+  },
+  "velocity": {
+    "x": 0,
+    "y": 0
+  },
+  "rotation":{
+    "angle": 0.1
+  },
+  "collisions": [],
+  "image": {
+    "name": "snow.png"
+  },
+  "decay-rotate": true
+}
 }

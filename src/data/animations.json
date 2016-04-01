@@ -1,117 +1,143 @@
 {
-	"ship": [{
-		"filmstripFrames": 1,
-		"time": 1,
+  "ship-new": [{
+    "filmstripFrames": 3,
+    "time": 100,
+    "properties": {
+      "image": {
+        "name": "ship-new.png",
+        "sourceX": 0,
+        "sourceY": 0,
+        "sourceWidth": 612,
+        "sourceHeight": 171
+      }
+    }
+  }],
+  "ship-new-left": [{
+    "filmstripFrames": 1,
+    "time": 100,
+    "properties": {
+      "image": {
+        "name": "ship-new-left.png",
+        "sourceX": 0,
+        "sourceY": 0,
+        "sourceWidth": 187,
+        "sourceHeight": 170
+      }
+    }
+  }],
+  "ship-new-right": [{
+    "filmstripFrames": 1,
+    "time": 100,
+    "properties": {
+      "image": {
+        "name": "ship-new-right.png",
+        "sourceX": 0,
+        "sourceY": 0,
+        "sourceWidth": 187,
+        "sourceHeight": 170
+      }
+    }
+  }],
+  "thrust": [{
+  "filmstripFrames": 9,
+  "time": 100,
+  "properties": {
+    "image": {
+      "name": "explosion-f9.png",
+      "sourceX": 0,
+      "sourceY": 0,
+      "sourceWidth": 522,
+      "sourceHeight": 50
+    }
+  }
+}],
+"donut1": [{
+  "filmstripFrames": 1,
+  "time": 1,
+  "properties": {
+    "image": {
+      "name": "donut1.png",
+      "sourceX": 0,
+      "sourceY": 0,
+      "sourceWidth": 75,
+      "sourceHeight": 75
+    }
+  }
+}],
+"donut2": [{
+  "filmstripFrames": 1,
+  "time": 1,
+  "properties": {
+    "image": {
+      "name": "donut2.png",
+      "sourceX": 0,
+      "sourceY": 0,
+      "sourceWidth": 75,
+      "sourceHeight": 75
+    }
+  }
+}],
+"donut3": [{
+  "filmstripFrames": 1,
+  "time": 1,
+  "properties": {
+    "image": {
+      "name": "donut3.png",
+      "sourceX": 0,
+      "sourceY": 0,
+      "sourceWidth": 75,
+      "sourceHeight": 75
+    }
+  }
+}],
+"donut4": [{
+  "filmstripFrames": 1,
+  "time": 1,
+  "properties": {
+    "image": {
+      "name": "donut4.png",
+      "sourceX": 0,
+      "sourceY": 0,
+      "sourceWidth": 75,
+      "sourceHeight": 75
+    }
+  }
+}],
+"donut5": [{
+  "filmstripFrames": 1,
+  "time": 1,
+  "properties": {
+    "image": {
+      "name": "donut5.png",
+      "sourceX": 0,
+      "sourceY": 0,
+      "sourceWidth": 75,
+      "sourceHeight": 75
+    }
+  }
+}],
+"explosion": [{
+		"filmstripFrames": 12,
+		"time": 50,
 		"properties": {
 			"image": {
-				"name": "ship",
+				"name": "explosion-f12.png",
 				"sourceX": 0,
 				"sourceY": 0,
-				"sourceWidth": 87,
-				"sourceHeight": 81
+				"sourceWidth": 1344,
+				"sourceHeight": 113
 			}
 		}
 	}],
-	"bullet": [{
-		"filmstripFrames": 1,
-		"time": 1,
+  "explosion-player": [{
+		"filmstripFrames": 12,
+		"time": 400,
 		"properties": {
 			"image": {
-				"name": "bullet",
+				"name": "explosion-f12.png",
 				"sourceX": 0,
 				"sourceY": 0,
-				"sourceWidth": 1,
-				"sourceHeight": 2
-			}
-		}
-	}],
-	"donut1": [{
-		"filmstripFrames": 1,
-		"time": 1,
-		"properties": {
-			"image": {
-				"name": "donut1",
-				"sourceX": 0,
-				"sourceY": 0,
-				"sourceWidth": 75,
-				"sourceHeight": 75
-			}
-		}
-	}],
-	"donut2": [{
-		"filmstripFrames": 1,
-		"time": 1,
-		"properties": {
-			"image": {
-				"name": "donut2",
-				"sourceX": 0,
-				"sourceY": 0,
-				"sourceWidth": 75,
-				"sourceHeight": 75
-			}
-		}
-	}],
-	"donut3": [{
-		"filmstripFrames": 1,
-		"time": 1,
-		"properties": {
-			"image": {
-				"name": "donut3",
-				"sourceX": 0,
-				"sourceY": 0,
-				"sourceWidth": 75,
-				"sourceHeight": 75
-			}
-		}
-	}],
-	"donut4": [{
-		"filmstripFrames": 1,
-		"time": 1,
-		"properties": {
-			"image": {
-				"name": "donut4",
-				"sourceX": 0,
-				"sourceY": 0,
-				"sourceWidth": 75,
-				"sourceHeight": 75
-			}
-		}
-	}],
-	"donut5": [{
-		"filmstripFrames": 1,
-		"time": 1,
-		"properties": {
-			"image": {
-				"name": "donut5",
-				"sourceX": 0,
-				"sourceY": 0,
-				"sourceWidth": 75,
-				"sourceHeight": 75
-			}
-		}
-	}],
-	"boss": [{
-		"filmstripFrames": 1,
-		"time": 1,
-		"properties": {
-			"image": {
-				"name": "boss",
-				"sourceX": 0,
-				"sourceY": 0,
-				"sourceWidth": 430,
-				"sourceHeight": 313
-			}
-		}
-	}],
-	"explosion": [{
-		"filmstripFrames": 10,
-		"time": 100,
-		"properties": {
-			"image": {
-				"name": "explosion",
-				"sourceX": 0,
-				"sourceY": 0,
-				"sourceWidth": 1130,
+				"sourceWidth": 1344,
 				"sourceHeight": 113
 			}
 		}

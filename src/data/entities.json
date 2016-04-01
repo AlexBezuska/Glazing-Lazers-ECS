@@ -1,259 +1,178 @@
 {
-	"main": [
-		{
-			"id": 0,
-			"name": "camera",
-			"camera": true,
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"matchCanvasSize": true,
-			"matchCenter": {
-				"id": 3
-			},
-			"timers":
-			{
-				"shake":{
-					"running": false,
-					"time": 0,
-					"max": 100
-				}
-			}
-		},
+  "main": [
+    {
+      "id": 0,
+      "name": "camera",
+      "camera": true,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "matchCanvasSize": true
+    },
+    {
+      "id": 1,
+      "name": "player",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "size": {
+        "width": 204,
+        "height": 171,
+        "z" : 4
+      },
+      "constrainPosition": {
+        "id": 2
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": {
+        "angle": 0
+      },
+      "playerController2d": {
+        "up": "up",
+        "down": "down",
+        "left": "left",
+        "right": "right"
+      },
+      "movement2d": {
+      "upMax": -2.5,
+      "downMax": 2.5,
+      "leftMax": -2.5,
+      "rightMax": 2.5,
+      "upAccel": -0.02,
+      "downAccel": 0.04,
+      "leftAccel": -0.03,
+      "rightAccel": 0.03
+    },
+    "friction": {
+      "x": 0.98,
+      "y": 0.98
+    },
+    "collisions": [],
+      "timers":{
+        "spray":{
+          "running": false,
+          "time": 0,
+          "max": 15,
+          "script": "./scripts/thrust"
+        },
+        "shoot":{
+        "running": false,
+        "time": 0,
+        "max": 75,
+        "script": "./scripts/player-shoot"
+      }
+    },
+      "animation": {
+        "name": "ship-new",
+        "time": 0,
+        "frame": 0,
+        "loop": true,
+        "speed": 1
+      }
+    },
+    {
+      "id": 2,
+      "name": "background",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "matchCenterX": {
+        "id": 0
+      },
+      "matchCenterY": {
+        "id": 0
+      },
 
-		{
-			"id": 1,
-			"zindex":{
-				"zindex": 2
-			},
-			"player": true,
-			"health": 1000,
-			"destroyIfHealthRunsOut": true,
-			"playableArea": {
-				"x": 0,
-				"y": 0,
-				"width": 1080,
-				"height": 1920
-			},
-			"strokeStyle": "red",
-			"position": {
-				"x": 496,
-				"y": 786
-			},
-			"size": {
-				"width": 66,
-				"height": 100
-			},
-			"velocity": {
-				"x": 0,
-				"y": 0
-			},
-			"playerController2d": {
-				"up": "up",
-				"down": "down",
-				"left": "left",
-				"right": "right"
-			},
-			"movement2d": {
-				"upMax": -0.5,
-				"downMax": 0.5,
-				"leftMax": -0.5,
-				"rightMax": 0.5,
-				"upAccel": -0.02,
-				"downAccel": 0.02,
-				"leftAccel": -0.02,
-				"rightAccel": 0.02
-			},
-			"friction": {
-				"x": 0.97,
-				"y": 0.97
-			},
-			"collisions":[],
-			"image": {
-				"name": "ship2"
-			},
-			"death-sounds":
-			[
-				"explosion",
-				"explosion2",
-				"explosion3",
-				"explosion4",
-				"explosion5",
-				"explosion6"
-			],
-			"timers":{
-				"shoot":{
-					"running": true,
-					"time": 0,
-					"max": 100,
-					"script": "./scripts/playerShoot"
-				},
-				"invincibilityFrames":{
-					"running": false,
-					"time": 0,
-					"max": 1000,
-					"script": "./scripts/playerFlashing"
-				},
-				"respawn":{
-					"running": false,
-					"time": 0,
-					"max": 5000,
-					"script": "./scripts/respawn"
-				}
-			}
-		},
-		{
-			"id": 2,
-			"name": "donut-spawner",
-			"position": {
-				"x": 0,
-				"y": -200
-			},
-			"size": {
-				"width": 960,
-				"height": 1
-			},
-			"timers":{
+      "fillColor": "#1f1c1c"
+    }
+  ],
+  "rain":[
+    {
+      "id": 0,
+      "name": "camera",
+      "camera": true,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "matchCanvasSize": true
+    },
+    {
+      "id": 1,
+      "name": "background",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "matchCenterX": {
+        "id": 0
+      },
+      "matchCenterY": {
+        "id": 0
+      },
 
-				"donut":{
-					"running": true,
-					"time": 0,
-					"max": 500,
-					"script": "./scripts/spawnDonut"
-				},
+      "fillColor": "#1f1c1c"
+    },
+    {
+      "id": 2,
+      "name": "rain-spawner",
+      "rainSpawner": true,
+      "position": {
+        "x": 0,
+        "y": -50
+      },
+      "size": {
+        "width": 1080,
+        "height": 50
+      },
+      "matchCenterX": {
+        "id": 0
+      },
+    "timers":{
+      "rain":{
+        "running": true,
+        "time": 0,
+        "max": 15,
+        "script": "./scripts/rain"
+      }
+    }
+  },
+    {
+      "id": 3,
+      "name": "rain-block",
+      "position": {
+        "x": 0,
+        "y": 650
+      },
+      "size": {
+        "width": 450,
+        "height": 450
+      },
+      "matchCenterX": {
+        "id": 0
+      },
+      "matchCenterY": {
+        "id": 0
+      },
 
-				"boss":{
-					"running": true,
-					"time": 0,
-					"max": 10000,
-					"script": "./scripts/spawnBoss"
-				}
-			}
-		},
-		{
-			"id": 3,
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"size": {
-				"width": 1080,
-				"height": 1920
-			}
-		},
-		{
-			"id": 4,
-			"star-field": true,
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"size": {
-				"width": 1080,
-				"height": 1920
-			},
-			"stars":[]
-		},
-		{
-			"id": 10,
-			"clouds": true,
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"zindex":{
-				"zindex": 1.5
-			},
-			"size": {
-				"width": 1180,
-				"height": 1920
-			},
-			"velocity":{
-				"x": 0,
-				"y": 0.3
-			},
-			"image":{
-				"name": "clouds"
-			}
-		},
-		{
-			"id": 11,
-			"position": {
-				"x": 0,
-				"y": -1920
-			},
-			"zindex":{
-				"zindex": 1.5
-			},
-			"size": {
-				"width": 1180,
-				"height": 1920
-			},
-			"velocity":{
-				"x": 0,
-				"y": 0.3
-			},
-			"image":{
-				"name": "clouds"
-			}
-		},
-		{
-			"id": 13,
-			"clouds": true,
-			"position": {
-				"x": 0,
-				"y": 960
-			},
-			"zindex":{
-				"zindex": 1.4
-			},
-			"size": {
-				"width": 1140,
-				"height": 1920
-			},
-			"velocity":{
-				"x": 0,
-				"y": 0.2
-			},
-			"image":{
-				"name": "cloud-shadow"
-			}
-		},
-		{
-			"id": 14,
-			"position": {
-				"x": 0,
-				"y": -960
-			},
-			"zindex":{
-				"zindex": 1.4
-			},
-			"size": {
-				"width": 1140,
-				"height": 1920
-			},
-			"velocity":{
-				"x": 0,
-				"y": 0.2
-			},
-			"image":{
-				"name": "cloud-shadow"
-			}
-		},
+      "fillColor": "rgba(255,255,255,0.1)",
+      "collisions": [],
+      "obstacle": true
 
-
-		{
-			"background": true,
-			"id": 12,
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"size":{
-				"width": 1080,
-				"height": 1920
-			}
-		}
-	]
+  }
+  ]
 }
