@@ -1,11 +1,11 @@
 "use strict";
 
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
-  game.entities.registerSearch("applyAccelerationSearch", ["applyAcceleration", "velocity"]);
-  ecs.addEach(function applyAcceleration(entity, elapsed) { // eslint-disable-line no-unused-vars
+  game.entities.registerSearch("accelerationSearch", ["acceleration", "velocity"]);
+  ecs.addEach(function acceleration(entity, elapsed) { // eslint-disable-line no-unused-vars
     var velocity = game.entities.get(entity, "velocity");
-    var applyAcceleration = game.entities.get(entity, "applyAcceleration");
-    velocity.x += elapsed * applyAcceleration.x;
-    velocity.y += elapsed * applyAcceleration.y;
-  }, "applyAccelerationSearch");
+    var acceleration = game.entities.get(entity, "acceleration");
+    velocity.x += elapsed * acceleration.x;
+    velocity.y += elapsed * acceleration.y;
+  }, "accelerationSearch");
 };

@@ -21,7 +21,7 @@ module.exports = function(entity, game) { // eslint-disable-line no-unused-vars
   bullet.velocityMin = -0.1;
   bullet.velocityMax = 0.1;
   bullet.accelerationY = -0.2;
-  particles.create( game, bullet);
+  particles.create(game, bullet);
 
   var spark = new particles.Config();
   spark.game = game;
@@ -40,7 +40,7 @@ module.exports = function(entity, game) { // eslint-disable-line no-unused-vars
   spark.accelerationY = 0.02;
   spark.lifeSpan = 350;
 
-  particles.create( game, spark);
+  particles.create(game, spark);
 
   var spark2 = new particles.Config();
   spark2.game = game;
@@ -59,6 +59,6 @@ module.exports = function(entity, game) { // eslint-disable-line no-unused-vars
   spark2.accelerationY = -0.02;
   spark2.lifeSpan = 250;
   spark2.lifeSpanFade = true;
-  particles.create( game, spark2);
+  particles.create(game, spark2);
 
 };

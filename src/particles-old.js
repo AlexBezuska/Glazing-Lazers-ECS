@@ -38,7 +38,7 @@ module.exports = {
         config.game.entities.set(particle, "decay-fade", true);
       }
       if (config.accelerationX || config.accelerationY) {
-        config.game.entities.set(particle, "applyAcceleration", {
+        config.game.entities.set(particle, "acceleration", {
           "x": config.accelerationX,
           "y": config.accelerationY
         });

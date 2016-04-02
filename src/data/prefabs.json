@@ -50,7 +50,7 @@
   },
 
   "retro":{
-    "applyAcceleration": {
+    "acceleration": {
       "x": 0,
       "y": -0.02
       },
@@ -85,7 +85,7 @@
     }
   },
   "fire":{
-    "applyAcceleration": {
+    "acceleration": {
       "x": 0,
       "y": 0
       },
@@ -116,7 +116,7 @@
     }
   },
   "fireworks":{
-    "applyAcceleration": {
+    "acceleration": {
       "x": 0,
       "y": 0
       },
@@ -147,7 +147,7 @@
     }
   },
   "bubble":{
-    "applyAcceleration": {
+    "acceleration": {
       "x": 0,
       "y": 0
       },
@@ -178,7 +178,7 @@
     }
   },
   "smoke":{
-    "applyAcceleration": {
+    "acceleration": {
       "x": 0,
       "y": 0
       },
@@ -209,7 +209,7 @@
     }
   },
   "spark":{
-    "applyAcceleration": {
+    "acceleration": {
       "x": 0,
       "y": 0
       },
