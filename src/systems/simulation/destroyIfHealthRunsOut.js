@@ -1,7 +1,7 @@
 "use strict";
 
 var random = require("../../random");
-var particles = require("../../particles");
+//var particles = require("../../particles");
 
 function healthRunsOut(canvas, entity, game) {
   var entityHealth = game.entities.get(entity, "health");
@@ -53,17 +53,17 @@ module.exports = function(ecs, game) {
         timers.explosion.running = true;
 
         if (!timers.explosion.running) {
-          var tailSmoke = new particles.Config(game);
-          tailSmoke.origin = entity;
-          tailSmoke.prefab = "smoke";
-          tailSmoke.qtyMin = 20;
-          tailSmoke.qtyMax = 20;
-          tailSmoke.sizeMin = 0.1;
-          tailSmoke.sizeMax = 2;
-          tailSmoke.velocityMin = -0.2;
-          tailSmoke.velocityMax = 0.2;
-          tailSmoke.accelerationY = -0.01;
-          particles.create(tailSmoke);
+          // var tailSmoke = new particles.Config(game);
+          // tailSmoke.origin = entity;
+          // tailSmoke.prefab = "smoke";
+          // tailSmoke.qtyMin = 20;
+          // tailSmoke.qtyMax = 20;
+          // tailSmoke.sizeMin = 0.1;
+          // tailSmoke.sizeMax = 2;
+          // tailSmoke.velocityMin = -0.2;
+          // tailSmoke.velocityMax = 0.2;
+          // tailSmoke.accelerationY = -0.01;
+          // particles.create(tailSmoke);
         }
 
 

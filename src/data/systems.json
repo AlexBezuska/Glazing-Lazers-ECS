@@ -12,24 +12,17 @@
     "main", "rain"
    ]
  },
-  {
-    "name": "./systems/simulation/decay",
-    "scenes": [
-     "main", "rain"
-    ]
-  },
+ {
+             "name": "splat-ecs/lib/systems/decay-life-span",
+             "scenes": "all"
+         },
   {
    "name": "./systems/simulation/decay-fade",
    "scenes": [
     "main", "rain"
    ]
  },
- {
-  "name": "./systems/simulation/decay-rotate",
-  "scenes": [
-   "main", "rain"
-  ]
-},
+
   {
    "name": "./systems/simulation/move-forward",
    "scenes": [

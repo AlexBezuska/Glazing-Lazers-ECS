@@ -107,12 +107,6 @@
     },
     "image":{
       "name": "fire-1.png"
-    },
-    "decay-fade": true,
-    "decay":{
-      "running": true,
-      "time": 0,
-      "max": 500
     }
   },
   "fireworks":{
